@@ -30,7 +30,10 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'https://pinventory-nine.vercel.app'],
+    origin: [
+      'https://pinventory.onrender.com',
+      'https://pinventory-nine.vercel.app',
+    ],
     credentials: true,
   })
 );
